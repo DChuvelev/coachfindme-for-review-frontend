@@ -1,0 +1,131 @@
+.chat {
+  border: none;
+  width: 100%;
+  height: 100%;
+  /* padding: 5px; */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+  overflow: hidden;
+}
+
+.chat__window {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  max-width: 100%;
+  height: 100%;
+  max-height: 800px;
+  border-radius: 10px;
+  flex: 1;
+  overflow: auto;
+  padding: 10px 10px;
+  gap: 9px;
+}
+
+.chat__message-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: fit-content;
+  border: none;
+  align-items: center;
+}
+
+.chat__input {
+  width: 100%;
+  resize: none;
+  overflow: hidden;
+  min-height: 80px;
+  max-height: 250px;
+  height: auto;
+  padding: 5px 5px;
+  font-size: 14px;
+  border-radius: 10px;
+  line-height: 1.5;
+}
+
+.chat__submit-btn {
+  width: fit-content;
+  min-width: 100px;
+  height: 30px;
+}
+
+.chat__chat-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.chat__message {
+  word-break: break-word;
+  text-align: left;
+  border-radius: 10px;
+  padding: 8px 10px;
+  width: fit-content;
+  max-width: 80%;
+}
+
+.chat__message-txt {
+  user-select: text;
+}
+
+.chat__message_type_other-users {
+
+  align-self: flex-start;
+  color: rgb(80, 30, 30);
+  background-color: rgb(184, 255, 255);
+
+}
+
+
+.chat__message_type_current-user {
+  /* margin-left: 20%; */
+  color: rgb(6, 118, 0);
+  background-color: aquamarine;
+  align-self: flex-end;
+}
+
+.chat__message-divider {
+  background-color: rgba(127, 255, 212, 0.179);
+  border-radius: 10px;
+  width: fit-content;
+  margin: 8px 0;
+  padding: 5px 10px;
+  align-self: center;
+}
+
+.chat__message-divider_type_year {
+  background-color: rgba(255, 101, 101, 0.347);
+}
+
+.chat__message-divider_type_month {
+  background-color: rgba(60, 255, 131, 0.675);
+}
+
+.chat__message-divider_type_day {
+  background-color: rgba(68, 77, 255, 0.675);
+}
+
+.chat__buttons-cont {
+  width: 100%;
+  height: 100%;
+  padding: 10px 10px;
+}
+
+.chat__send-btn {
+  font-size: 14px;
+  line-height: 1.25;
+  width: fit-content;
+  padding: 0px 16px;
+  height: 45px;
+  border-radius: 30px;
+  border: none;
+  background-color: rgba(47, 113, 229, 1);
+  color: white;
+  box-shadow: 0px 5px 15px 0px rgba(14, 26, 57, 0.25);
+}
+
+.chat__send-btn:hover {
+  background-color: rgba(2, 85, 229, 1);
+}

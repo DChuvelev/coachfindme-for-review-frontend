@@ -1,0 +1,116 @@
+.coach-page {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-columns: 40% 20% 40%;
+  grid-template-rows: 45% auto 1fr;
+  padding: 15px 15px;
+  row-gap: 12px;
+  grid-template-areas:
+    "info info photo"
+    "gpt  gpt  gpt"
+    "chat chat chat";
+  overflow: auto;
+}
+
+.coach-page__img-cont {
+  display: flex;
+  /* justify-content: flex-end; */
+  justify-self: end;
+  grid-area: photo;
+  /* height: 100%; */
+  /* width: 100%; */
+  max-height: 100%;
+  overflow: hidden;
+  padding: 15px 15px;
+  aspect-ratio: 1/1;
+}
+
+.coach-page__image {
+  /* width: 100%; */
+  height: 100%;
+  object-fit: contain;
+  border-radius: 20px;
+  /* border: 2px solid black; */
+  overflow: hidden;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.coach-page__info {
+  display: flex;
+  flex-direction: column;
+  grid-area: info;
+  text-align: left;
+  justify-content: space-around;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.coach-page__info-left {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.coach-page__info-right {
+  color: rgb(53, 0, 0);
+}
+
+.coach-page__gpt {
+  grid-area: gpt;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  border: 2px solid grey;
+  border-radius: 36px;
+  margin: 0 40px;
+  text-align: center;
+  padding: 5px 30px;
+  background-color: antiquewhite;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: opacity 2s ease;
+  cursor: pointer;
+}
+
+.coach-page__gpt-text {
+  font-style: italic;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.coach-page__text {
+  grid-area: text;
+}
+
+.coach-page__chat {
+  display: flex;
+  flex-direction: column;
+  grid-area: chat;
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+  justify-self: center;
+}
+
+@media only screen and (max-width: 515px) {
+
+  .coach-page {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: unset;
+  }
+
+
+  .coach-page__chat {
+    height: 500px;
+  }
+}
+
+@media only screen and (max-width: 790px) {
+  .coach-page__img-cont {
+
+    width: 100%;
+
+  }
+}

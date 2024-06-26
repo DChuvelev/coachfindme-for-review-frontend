@@ -1,0 +1,147 @@
+.header {
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.03);
+  padding: 0 24px;
+  border-radius: 20px;
+}
+
+.header__menu {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  max-height: 100%;
+  gap: 8px;
+}
+
+.header__menu-items {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  max-height: 100%;
+}
+
+.header__logo {
+  display: block;
+  height: 50px;
+  object-fit: contain;
+  position: relative;
+  top: -5px;
+  transition: 0.3s ease;
+  background-color: transparent;
+}
+
+.header__logo-cont {
+  position: relative;
+  height: 40px;
+  width: 60px;
+}
+
+.header__logo:hover {
+  height: 70px;
+  filter: drop-shadow(6px 6px 10px rgba(0, 0, 0, 0.4));
+}
+
+.header__btn-container {
+  padding: 0;
+  /* max-height: 24px; */
+  height: fit-content;
+}
+
+.header__menu-item-btn {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+  border: 1px solid rgb(197, 197, 197);
+  border-radius: 20px;
+  padding: 4px 12px;
+  background-color: white;
+  /* box-shadow: 0 0 4px rgba(128, 128, 128, 0.227); */
+}
+
+.header__menu-item-lang {
+  height: fit-content;
+  border: none;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+}
+
+.header__menu-item-lang-icon {
+  border: none;
+  padding: 0;
+  margin: 0;
+  width: 20px;
+  background-color: transparent;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.142);
+}
+
+.header__menu-item-lang-icon:hover {
+  box-shadow: 0px 0px 20px rgba(255, 77, 0, 1);
+}
+
+.header__menu-item-btn:hover {
+  color: rgba(255, 77, 0, 1);
+  background-color: rgb(249, 249, 255);
+}
+
+.header__link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: black;
+  /* font-family: "Cabinet Grotesk"; */
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.2;
+  max-height: 40px;
+  height: 100%;
+}
+
+.header__link_type_selected {
+  border-bottom: 4px solid black;
+}
+
+.header__bell {
+  width: 15px;
+  aspect-ratio: 1/1;
+  filter: invert(23%) sepia(72%) saturate(6284%) hue-rotate(353deg) brightness(94%) contrast(126%);
+}
+
+.header__link:hover {
+  color: rgba(255, 77, 0, 1);
+}
+
+.header__avatar {
+  height: 100%;
+  /* aspect-ratio: 1/1; */
+}
+
+@media only screen and (max-width: 515px) {
+  .header__menu-item-btn {
+    font-size: 10px;
+  }
+
+  .header__link {
+    font-size: 10px;
+  }
+
+  .header__menu-items {
+    gap: 10px;
+  }
+
+  .header {
+
+    padding: 0 4px;
+  }
+
+  .header__logo-cont {
+
+    width: 24px;
+  }
+
+  .header__logo {
+    top: 8px;
+    height: 24px;
+
+  }
+}

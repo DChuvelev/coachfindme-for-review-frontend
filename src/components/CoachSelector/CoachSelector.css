@@ -1,0 +1,134 @@
+.coach-selector {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 32px 0 16px;
+  overflow: auto;
+}
+
+.coach-selector__cards {
+  padding: 0 30px;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 20px;
+  list-style: none;
+  overflow: auto;
+  height: 100%;
+  width: 100%;
+}
+
+.coach-selector__cards-container {
+  flex: 0 1 auto;
+  border: none;
+  padding: 20px 1px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.04);
+  border-radius: 20px;
+}
+
+.coach-selector__sidebar {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 auto;
+  border: none;
+  padding: 0 30px 0 0;
+  /* overflow: hidden; */
+  max-width: 320px;
+}
+
+.coach-selector__search-fields {
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  overflow: auto;
+  padding-right: 4px;
+}
+
+.coach-selector__legend {
+  padding: 0 6px;
+}
+
+.coach-selector__fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1px solid rgb(197, 197, 197);
+  border-radius: 4px;
+  padding: 0 6px 10px 6px;
+  min-width: 100%;
+}
+
+.coach-selector__label {
+  display: flex;
+  column-gap: 5px;
+}
+
+.coach-selector__label-text {
+  margin: 0;
+}
+
+.coach-selector__buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0 15px 0;
+  width: 100%;
+  gap: 8px;
+}
+
+.coach-selector__text-ask-gpt {
+  white-space: normal;
+  word-wrap: break-word;
+  /* max-width: 100%; */
+
+}
+
+.coach-selector__btn {
+
+  line-height: 1.25;
+  width: fit-content;
+  padding: 0px 16px;
+
+  border-radius: 30px;
+  border: none;
+
+  color: white;
+  box-shadow: 0px 5px 15px 0px rgba(14, 26, 57, 0.25);
+}
+
+.coach-selector-btn:hover {
+  background-color: rgba(2, 85, 229, 1);
+}
+
+.coach-selector__btn_type_reset-form {
+  background-color: orange;
+  font-size: 16px;
+  height: 30px;
+  border-radius: 15px;
+}
+
+.coach-selector__btn_type_ask-gpt {
+  background-color: rgba(47, 113, 229, 1);
+  font-size: 16px;
+  height: 45px;
+}
+
+.coach-selector__text-ask-gpt {
+  border-top: 1px solid gray;
+  font-size: 16px;
+  padding-top: 8px;
+}
+
+@media only screen and (max-width: 680px) {
+  .coach-selector {
+
+    flex-direction: column;
+    align-items: center;
+
+  }
+}
